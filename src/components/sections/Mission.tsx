@@ -28,7 +28,7 @@ export default function Mission() {
           </h2>
           <p className={styles.body}>
             Elevate Trade bridges the gap between massive industrial requirements
-            and manufacturers' production lines. Our mission is to mitigate global
+            and manufacturers production lines. Our mission is to mitigate global
             supply chain risks while maximising ROI through precision negotiation.
           </p>
 
