@@ -35,7 +35,7 @@ export default function Benefits() {
               <span className={styles.accent}>Advantage.</span>
             </h2>
             <p className={styles.body}>
-              We don't just find suppliers; we act as an extension of your procurement
+              We do not just find suppliers; we act as an extension of your procurement
               department, leveraging aggregate data to secure the best possible outcomes.
             </p>
             <div className={styles.stat}>
