@@ -70,7 +70,7 @@ export default function Insights() {
           <div>
             <h4 className={styles.tipTitle}>Pro Tip: Timing Your RFQ</h4>
             <p className={styles.tipText}>
-              Submitting bids at the end of a manufacturer's fiscal quarter can often yield up to 8% deeper
+              Submitting bids at the end of a manufacturers fiscal quarter can often yield up to 8% deeper
               discounts as global representatives look to hit their final sales quotas.
             </p>
           </div>
