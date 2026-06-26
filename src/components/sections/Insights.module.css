@@ -1,0 +1,160 @@
+.section {
+  padding: var(--section-pad) 0;
+  background: var(--off-white);
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.heading {
+  font-size: clamp(36px, 4vw, 56px);
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.sub {
+  font-size: 15px;
+  color: var(--dark-grey);
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.cardDark {
+  background: var(--navy);
+  border-color: transparent;
+}
+
+.darkIconWrap {
+  width: 48px;
+  height: 48px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.darkTitle {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.darkDesc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.darkBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--orange);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 100px;
+  transition: background 0.2s ease;
+}
+
+.darkBtn:hover {
+  background: var(--orange-hover);
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  color: var(--mid-grey);
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mid-grey);
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.cardDesc {
+  font-size: 13px;
+  color: var(--dark-grey);
+  line-height: 1.6;
+}
+
+.proTip {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px 28px;
+}
+
+.tipIcon {
+  font-size: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.tipTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.tipText {
+  font-size: 14px;
+  color: var(--dark-grey);
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
