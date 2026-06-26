@@ -20,10 +20,8 @@ export default function Navbar() {
     { label: 'Insights', href: '#insights' },
   ]
 
-  const navClass = scrolled ? styles.nav + ' ' + styles.scrolled : styles.nav
-
   return (
-    <nav className={navClass}>
+    <nav className={scrolled ? styles.navScrolled : styles.nav}>
       <div className={styles.inner}>
         <a href="#" className={styles.logo}>
           <div className={styles.logoIcon}>
@@ -43,7 +41,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <a href="#contact" className={styles.cta + ' btn-primary'}>
+        <a href="#contact" className={styles.cta}>
           Get a Quote
         </a>
 
@@ -70,7 +68,7 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a href="#contact" className="btn-primary" onClick={() => setMenuOpen(false)}>
+          <a href="#contact" className={styles.mobileCta} onClick={() => setMenuOpen(false)}>
             Get a Quote
           </a>
         </div>
